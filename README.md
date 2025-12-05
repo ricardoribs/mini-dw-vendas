@@ -29,37 +29,63 @@ graph LR
     E -->|Exportação CSV| F[Looker Studio]
 ```
 
-🛠️ Tecnologias e Técnicas
-Categoria	     Tecnologia	        Detalhes da Implementação
-Linguagem	     Python 3.12	    Scripting e manipulação de arquivos.
-Banco de Dados	 DuckDB	            Banco OLAP local para processamento SQL de alta performance.
-Orquestração	 Prefect	        Gerenciamento de fluxo e dependência de tarefas (Pipeline).
-Modelagem	     Star Schema	    Criação de tabelas Fato e Dimensão na camada Gold.
-Qualidade	     Pandas	            Framework próprio de validação (Null checks, Regras de negócio).
-Visualização	 Looker Studio	    Dashboard interativo com filtros dinâmicos.
+## 🛠️ Tecnologias e Técnicas
 
-📂 Estrutura do Data Lake
+| Categoria     | Tecnologia      | Detalhes da Implementação |
+|---------------|-----------------|----------------------------|
+| Linguagem     | Python 3.12     | Scripting e manipulação de arquivos |
+| Banco de Dados| DuckDB          | Banco OLAP local para processamento SQL de alta performance |
+| Orquestração  | Prefect         | Gerenciamento de fluxo e dependência de tarefas (Pipeline) |
+| Modelagem     | Star Schema     | Tabelas Fato e Dimensões na camada Gold |
+| Qualidade     | Pandas          | Framework próprio de validação (Null checks, regras de negócio) |
+| Visualização  | Looker Studio   | Dashboard interativo com filtros dinâmicos |
+
+---
+
+## 📂 Estrutura do Data Lake
+
 O projeto organiza os dados em camadas lógicas para garantir governança:
-◾ data/bronze: Dados brutos (vendas.csv, clientes.csv) simulando a extração do sistema de origem.
 
-◾ data/silver: Dados tratados. Correção de tipos (Data/Decimal), remoção de duplicatas e enriquecimento (Joins).
+**◾ `data/bronze/`**  
+Dados brutos (`vendas.csv`, `clientes.csv`) simulando o sistema de origem.
 
-◾ data/gold: Dados prontos para consumo.
+**◾ `data/silver/`**  
+Dados tratados: correção de tipos (Data/Decimal), remoção de duplicatas e enriquecimento (joins).
 
-◾ fato_vendas: Tabela transacional otimizada.
+**◾ `data/gold/`**  
+Dados prontos para consumo.
 
-◾ dim_cliente: Dimensão de perfil e segmentação.
+**◾ `fato_vendas`**  
+Tabela transacional otimizada.
 
-◾ dim_produto: Dimensão de catálogo e categorias.
+**◾ `dim_cliente`**  
+Dimensão com perfil e segmentação.
 
-🚀 Como Executar o Projeto:
-git clone [https://github.com/ricardoribs/mini-dw-vendas.git](https://github.com/ricardoribs/mini-dw-vendas.git)
+**◾ `dim_produto`**  
+Dimensão com catálogo e categorias.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/ricardoribs/mini-dw-vendas.git
 cd mini-dw-boticario
+```
 
-2. Instalar dependências:
+Instale as dependências:
+
+```bash
 pip install pandas duckdb faker prefect
+```
 
-3. Rodar o Pipeline (ETL Completo)
-Utilize o script do orquestrador para executar todas as tarefas na ordem correta:
+Execute o pipeline completo:
+
+```bash
 python src/pipeline_prefect.py
-O output mostrará os logs de execução de cada etapa (Bronze -> Silver -> Gold).
+```
+
+Os logs vão mostrar a execução de cada etapa (Bronze → Silver → Gold).
+
