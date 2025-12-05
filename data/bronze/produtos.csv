@@ -1,0 +1,43 @@
+id_produto,nome_produto,categoria,linha,preco_unitario
+1,Malbec - Variação 1,Perfumaria,Malbec,143.95
+2,Malbec - Variação 2,Perfumaria,Malbec,188.91
+3,Malbec - Variação 3,Perfumaria,Malbec,141.35
+4,Floratta - Variação 1,Perfumaria,Floratta,226.8
+5,Floratta - Variação 2,Perfumaria,Floratta,111.75
+6,Floratta - Variação 3,Perfumaria,Floratta,160.8
+7,Egeo - Variação 1,Perfumaria,Egeo,76.07
+8,Egeo - Variação 2,Perfumaria,Egeo,166.99
+9,Egeo - Variação 3,Perfumaria,Egeo,145.13
+10,Quasar - Variação 1,Perfumaria,Quasar,222.48
+11,Quasar - Variação 2,Perfumaria,Quasar,31.43
+12,Quasar - Variação 3,Perfumaria,Quasar,229.89
+13,Glamour - Variação 1,Perfumaria,Glamour,203.37
+14,Glamour - Variação 2,Perfumaria,Glamour,62.7
+15,Glamour - Variação 3,Perfumaria,Glamour,138.05
+16,Shampoo Match - Variação 1,Cabelos,Shampoo Match,209.1
+17,Shampoo Match - Variação 2,Cabelos,Shampoo Match,123.46
+18,Shampoo Match - Variação 3,Cabelos,Shampoo Match,148.75
+19,Condicionador Match - Variação 1,Cabelos,Condicionador Match,169.06
+20,Condicionador Match - Variação 2,Cabelos,Condicionador Match,216.03
+21,Condicionador Match - Variação 3,Cabelos,Condicionador Match,82.46
+22,Máscara Capilar - Variação 1,Cabelos,Máscara Capilar,146.37
+23,Máscara Capilar - Variação 2,Cabelos,Máscara Capilar,182.53
+24,Máscara Capilar - Variação 3,Cabelos,Máscara Capilar,219.35
+25,Loção Nativa SPA - Variação 1,Corpo e Banho,Loção Nativa SPA,211.94
+26,Loção Nativa SPA - Variação 2,Corpo e Banho,Loção Nativa SPA,78.48
+27,Loção Nativa SPA - Variação 3,Corpo e Banho,Loção Nativa SPA,32.83
+28,Óleo Corporal - Variação 1,Corpo e Banho,Óleo Corporal,246.0
+29,Óleo Corporal - Variação 2,Corpo e Banho,Óleo Corporal,151.91
+30,Óleo Corporal - Variação 3,Corpo e Banho,Óleo Corporal,109.25
+31,Sabonete Líquido - Variação 1,Corpo e Banho,Sabonete Líquido,48.4
+32,Sabonete Líquido - Variação 2,Corpo e Banho,Sabonete Líquido,247.43
+33,Sabonete Líquido - Variação 3,Corpo e Banho,Sabonete Líquido,150.7
+34,Batom Make B. - Variação 1,Maquiagem,Batom Make B.,36.99
+35,Batom Make B. - Variação 2,Maquiagem,Batom Make B.,76.59
+36,Batom Make B. - Variação 3,Maquiagem,Batom Make B.,170.79
+37,Base Mate - Variação 1,Maquiagem,Base Mate,210.2
+38,Base Mate - Variação 2,Maquiagem,Base Mate,123.15
+39,Base Mate - Variação 3,Maquiagem,Base Mate,160.7
+40,Máscara de Cílios - Variação 1,Maquiagem,Máscara de Cílios,170.57
+41,Máscara de Cílios - Variação 2,Maquiagem,Máscara de Cílios,124.86
+42,Máscara de Cílios - Variação 3,Maquiagem,Máscara de Cílios,238.63
