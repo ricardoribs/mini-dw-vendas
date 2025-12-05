@@ -21,13 +21,13 @@ O projeto segue a **Medallion Architecture** (Bronze, Silver, Gold), processada 
 
 ```mermaid
 graph LR
-    A["📡 Gerador de Dados (Faker)"] -->|"Ingestão Raw"| B[("🥉 Bronze Layer")]
-    B -->|"Limpeza & Casting"| C[("🥈 Silver Layer")]
-    C -->|"Validação de Qualidade"| D{"🕵️ Data Quality Gate"}
-    D -->|"Passou"| E[("🥇 Gold Layer - Star Schema")]
-    D -->|"Falhou"| X["❌ Alerta de Erro"]
-    E -->|"Exportação CSV"| F["📈 Looker Studio"]
-
+    A[Gerador de Dados - Faker] -->|Ingestão Raw| B[Bronze Layer]
+    B -->|Limpeza & Casting| C[Silver Layer]
+    C -->|Validação de Qualidade| D{Data Quality Gate}
+    D -->|Passou| E[Gold Layer - Star Schema]
+    D -->|Falhou| X[Alerta de Erro]
+    E -->|Exportação CSV| F[Looker Studio]
+```
 
 🛠️ Tecnologias e Técnicas
 Categoria	     Tecnologia	        Detalhes da Implementação
