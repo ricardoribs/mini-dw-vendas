@@ -28,6 +28,7 @@ graph LR
     D -->|"Falhou"| X["❌ Alerta de Erro"]
     E -->|"Exportação CSV"| F["📈 Looker Studio"]
 
+
 🛠️ Tecnologias e Técnicas
 Categoria	     Tecnologia	        Detalhes da Implementação
 Linguagem	     Python 3.12	    Scripting e manipulação de arquivos.
